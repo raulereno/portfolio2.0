@@ -1,0 +1,24 @@
+#container_portfolio {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+  margin-top: 6rem;
+
+  .portfolio_title {
+    color: $font-ligth;
+    border-bottom: 3px solid #276880;
+    padding-bottom: 0.5rem;
+    width: 90%;
+    font-size: 1.8rem;
+    color: $font-ligth;
+  }
+  .portfolio_text {
+    color: $font-ligth;
+  }
+  .container_projects {
+    //TODO: hacerlo por grids
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

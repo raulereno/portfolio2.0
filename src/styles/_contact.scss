@@ -1,0 +1,162 @@
+#container_contact {
+  margin-top: 7rem;
+  padding: 0 100px;
+  margin-bottom: 5rem;
+  h2 {
+    color: $font-ligth;
+    border-bottom: 3px solid #276880;
+    padding-bottom: 0.5rem;
+    width: 90%;
+    font-size: 1.8rem;
+    color: $font-ligth;
+  }
+  .contact {
+    display: flex;
+    color: $font-ligth;
+    align-items: center;
+    height: 420px;
+
+    .container_form {
+      margin-left: 4rem;
+      width: 470px;
+      align-self: flex-end;
+      margin-left: 180px;
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        input {
+          width: 225px;
+        }
+      }
+      .input-name {
+        margin-right: 1rem;
+      }
+      .input-subject {
+        margin-bottom: 1rem;
+        width: 465px;
+      }
+      .container_textarea {
+        display: flex;
+        flex-direction: column;
+        .textarea-message {
+          width: 465px;
+          height: 200px;
+        }
+      }
+      .buttonSubmit {
+        margin-top: 10px;
+        background-color: $secondary-color;
+        color: $font-ligth;
+        border: none;
+        width: 140px;
+        align-self: flex-end;
+        padding: 10px;
+        margin-right: 3px;
+        border-radius: 4px;
+        transition: 0.3s;
+        &:hover {
+          background-color: #00435b;
+          transform: scale(1.1);
+          cursor: pointer;
+          font-weight: bold;
+        }
+      }
+      .disableButton {
+        opacity: 0.5;
+        &:hover {
+          transform: scale(1);
+          cursor: auto;
+          font-weight: lighter;
+          background-color: $secondary-color;
+        }
+      }
+      span.errors {
+        color: rgb(165, 0, 0);
+      }
+      .errorsInputs {
+        border: 1px solid red;
+      }
+    }
+    .location {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      .location-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $secondary-color;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        transition: 0.2s;
+
+        &:hover {
+          background-color: $font-ligth;
+          svg {
+            fill: $secondary-color;
+          }
+        }
+        svg {
+          fill: $font-ligth;
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .location-text {
+        margin-left: 0.5rem;
+        h4 {
+          margin: 0;
+          font-size: 1.2rem;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .email-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $secondary-color;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        transition: 0.2s;
+        &:hover {
+          background-color: $font-ligth;
+          svg {
+            fill: $secondary-color;
+          }
+        }
+        svg {
+          fill: $font-ligth;
+
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .email-text {
+        margin-left: 0.5rem;
+        h4 {
+          margin: 0;
+          font-size: 1.2rem;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

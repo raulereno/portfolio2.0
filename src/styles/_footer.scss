@@ -1,0 +1,39 @@
+.container_footer {
+  background-color: #000b26;
+  height: 250px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    color: $font-ligth;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .quote {
+    display: flex;
+    flex-direction: column;
+    p {
+      color: $font-ligth;
+      text-align: center;
+    }
+    .film {
+      align-self: flex-end;
+    }
+  }
+  .socialMedias {
+    align-self: center;
+    a {
+      svg {
+        fill: #002b99;
+        width: 50px;
+        height: 50px;
+        margin-right: 1.5rem;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.1);
+          fill: ghostwhite;
+        }
+      }
+    }
+  }
+}

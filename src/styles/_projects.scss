@@ -1,0 +1,124 @@
+.cards_proyects {
+  background: rgba(255, 255, 255, 0.113);
+
+  width: 280px;
+  height: 180px;
+  margin: 0.5rem 0.5rem;
+  position: relative;
+  border-radius: 6px;
+  transition: 0.3s;
+  z-index: 1;
+  overflow: hidden;
+  .proyect-name {
+    color: $font-ligth;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .portfolio-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .buttonDetail {
+      margin-right: 2rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    span {
+      color: $font-ligth;
+    }
+  }
+  .links_proyects {
+    width: 30px;
+    height: 30px;
+    fill: white;
+  }
+}
+.cards_proyects::before {
+  content: "";
+  background: rgba(44, 44, 44, 0.7);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+.cards_proyects .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards_proyects .portfolio-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid #d7dce1;
+  border-left: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+.cards_proyects .portfolio-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid #d7dce1;
+  border-right: 3px solid #d7dce1;
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+.cards_proyects .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+.cards_proyects .portfolio-links a {
+  color: #45505b;
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.cards_proyects .portfolio-links a:hover {
+  color: #148af9;
+}
+.cards_proyects:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+.cards_proyects:hover .portfolio-info {
+  opacity: 1;
+}
+.cards_proyects:hover .portfolio-info::before {
+  top: 15px;
+  left: 15px;
+}
+.cards_proyects:hover .portfolio-info::after {
+  bottom: 15px;
+  right: 15px;
+}

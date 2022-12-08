@@ -1,0 +1,109 @@
+.container_detail {
+  background-color: #1e3163;
+  width: 190vh;
+  height: 90vh;
+  display: flex;
+  border-radius: 5px;
+
+  .detail_Proyect {
+    .details {
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      padding: 2rem 2rem 0 2rem;
+      .gallery_detail {
+        width: 60%;
+        height: 20rem;
+        box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.277);
+
+        img {
+          width: 8rem;
+          height: 20rem;
+        }
+      }
+      .detail_info {
+        align-self: center;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .links {
+          display: flex;
+          flex-direction: column;
+          padding-top: 15px;
+
+          a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            transition: 0.5s;
+            svg {
+              height: 2.5rem;
+              width: 2.5rem;
+              margin-right: 5px;
+              fill: rgba(255, 255, 255, 0.383);
+            }
+            &:hover {
+              transform: scale(1.1);
+              padding-bottom: 3px;
+              text-decoration: underline 1px white;
+              svg {
+                fill: white;
+              }
+            }
+          }
+        }
+        .title_proyect {
+          color: $font-ligth;
+          font-size: 1.5rem;
+          border-bottom: 1px solid $secondary-color;
+        }
+        p {
+          padding: 10px 1.5rem;
+          color: $font-ligth;
+        }
+      }
+    }
+  }
+  .title_tecnologies {
+    text-align: center;
+    color: $font-ligth;
+    text-decoration: underline 2px $secondary-color;
+    padding-bottom: 3px;
+  }
+  .container_img-tecnologies {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+
+    .container_img-tecs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .imgAuth0 {
+        width: 90px;
+        height: 2.8rem;
+      }
+      .imgExpress {
+        width: 7rem;
+      }
+      span {
+        font-size: 1.2rem;
+        color: $font-ligth;
+        text-decoration: underline 2px $secondary-color;
+        margin-bottom: 7px;
+      }
+      img {
+        filter: grayscale(1);
+        opacity: 0.6;
+        width: 4.5rem;
+        height: 4rem;
+        transition: 0.5s;
+        &:hover {
+          filter: grayscale(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
