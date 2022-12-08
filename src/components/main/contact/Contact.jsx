@@ -3,6 +3,10 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { validate, validateForm } from "./validate";
 
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+
 const Contact = () => {
   const [form, setForm] = useState({
     user_name: "",
@@ -15,32 +19,27 @@ const Contact = () => {
   const form2 = useRef();
 
   const sendMail = (e) => {
+    console.log(PUBLIC_KEY);
     e.preventDefault();
     let aux = validateForm(form);
 
     if (Object.keys(aux).length !== 0) {
-      console.log(" hay errores");
       setErrors(aux);
-
-      // TODO: poner dentro de un .env
-      // emailjs
-      //   .sendForm(
-      //     "service_h69gvjt",
-      //     "template_n2yngb8",
-      //     form2.current,
-      //     "co7w_bu4ox7o1dVzH"
-      //   )
-      //   .then(
-      //     (result) => {
-      //       console.log(result.text);
-      //     },
-      //     (error) => {
-      //       console.log(error.text);
-      //     }
-      //   );
-    }
-    if (Object.keys(aux).length === 0) {
-      console.log("no hay errores");
+    } else if (Object.keys(aux).length === 0) {
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form2.current, PUBLIC_KEY).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+      setForm({
+        user_name: "",
+        user_email: "",
+        user_subject: "",
+        message: "",
+      });
     }
     console.log(errors);
   };
@@ -96,7 +95,7 @@ const Contact = () => {
                     name="user_name"
                     id=""
                     placeholder="Tu nombre"
-                    value={form.name}
+                    value={form.user_name}
                     onChange={handleInputs}
                   />
                   <span className="errors">{errors.user_name}</span>
@@ -110,7 +109,7 @@ const Contact = () => {
                     name="user_email"
                     id=""
                     placeholder="Tu email"
-                    value={form.email}
+                    value={form.user_email}
                     onChange={handleInputs}
                   />
                   <span className="errors">{errors.user_email}</span>
@@ -124,7 +123,7 @@ const Contact = () => {
                 name="user_subject"
                 id=""
                 placeholder="Asunto"
-                value={form.subject}
+                value={form.user_subject}
                 onChange={handleInputs}
               />
             </div>
