@@ -22,3 +22,30 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 600px) {
+  #container_portfolio {
+    background-color: $base-color;
+    margin-top: 0;
+    padding: 35px 10px;
+
+    .portfolio_title {
+      margin: 0;
+      margin-bottom: 15px;
+      text-align: center;
+      width: auto;
+      font-size: 40px;
+    }
+    .portfolio_text {
+      font-size: 18px;
+      text-align: center;
+    }
+    .container_projects {
+      flex-direction: column;
+      align-items: center;
+      .cards_proyects {
+        width: 320px;
+        height: 220px;
+      }
+    }
+  }
+}

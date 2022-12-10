@@ -19,7 +19,6 @@ const Contact = () => {
   const form2 = useRef();
 
   const sendMail = (e) => {
-    console.log(PUBLIC_KEY);
     e.preventDefault();
     let aux = validateForm(form);
 
@@ -51,7 +50,6 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
 
     setErrors(validate({ ...form, [name]: value }));
-    console.log(errors);
   };
 
   return (
@@ -85,8 +83,8 @@ const Contact = () => {
         <div className="container_form">
           <form ref={form2} onSubmit={sendMail}>
             <div>
-              <div style={{ display: "flex" }}>
-                <div className="inputs">
+              <div className="inputs">
+                <div>
                   <input
                     className={`input-name ${
                       errors.user_name && "errorsInputs"
@@ -100,7 +98,7 @@ const Contact = () => {
                   />
                   <span className="errors">{errors.user_name}</span>
                 </div>
-                <div className="inputs">
+                <div>
                   <input
                     className={`input-email ${
                       errors.user_email && "errorsInputs"

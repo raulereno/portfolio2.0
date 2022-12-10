@@ -24,9 +24,5 @@ export const UseTypedHooks = ({ reset }) => {
       typed.current.destroy();
     };
   }, [reset]);
-  return (
-    <div className="type-wrap">
-      <span style={{ whiteSpace: "pre" }} ref={el} />
-    </div>
-  );
+  return <span className="typing" style={{ whiteSpace: "pre" }} ref={el} />;
 };

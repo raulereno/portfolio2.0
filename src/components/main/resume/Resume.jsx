@@ -16,7 +16,6 @@ const Resume = () => {
           </h3>
           <ul>
             <li>
-              <div className="circle_list"></div>
               <h4>
                 <b>Front-End React</b>
               </h4>
@@ -34,25 +33,18 @@ const Resume = () => {
               </a>
             </li>
             <li>
-              <div className="circle_list"></div>
               <h4>
                 <b>Full Stack Developer</b>
               </h4>
-              <p>
-                <strong>...En curso en SoyHenry, stack PERN</strong>
-              </p>
+              <p>...En curso en SoyHenry, stack PERN</p>
             </li>
             <li>
-              <div className="circle_list"></div>
               <h4>
                 <b>Full Stack Developer</b>
               </h4>
-              <p>
-                <strong>...En curso en CoderHouse, stack MERN</strong>
-              </p>
+              <p>...En curso en CoderHouse, stack MERN</p>
             </li>
             <li>
-              <div className="circle_list"></div>
               <h4>
                 <b>Curso de Fundamentos de la programacion</b>
               </h4>

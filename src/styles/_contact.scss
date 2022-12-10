@@ -28,7 +28,6 @@
       }
       .inputs {
         display: flex;
-        flex-direction: column;
         margin-bottom: 15px;
         input {
           width: 225px;
@@ -155,6 +154,85 @@
         }
         p {
           margin: 0;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #container_contact {
+    display: none;
+    background-color: $base-color;
+    margin-top: 0;
+    padding: 35px 0;
+    margin-bottom: 5px;
+    h2 {
+      width: auto;
+      text-align: center;
+      font-size: 70px;
+    }
+    .contact {
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      .location {
+        .location-icon {
+          width: 120px;
+          height: 120px;
+          svg {
+            height: 70px;
+            width: 70px;
+          }
+        }
+        .location-text {
+          h4 {
+            font-size: 45px;
+          }
+          p {
+            font-size: 35px;
+          }
+        }
+      }
+      .email {
+        .email-icon {
+          width: 120px;
+          height: 120px;
+          svg {
+            height: 70px;
+            width: 70px;
+          }
+        }
+        .email-text {
+          h4 {
+            font-size: 45px;
+          }
+          p {
+            font-size: 35px;
+          }
+        }
+      }
+      .container_form {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 25px;
+        div {
+          min-width: 350px;
+        }
+        form {
+          align-items: center;
+
+          .input-subject {
+            width: 100%;
+          }
+          .container_textarea {
+            min-width: 360px;
+            .textarea-message {
+              width: 100%;
+            }
+          }
+          .buttonSubmit {
+            align-self: center;
+          }
         }
       }
     }

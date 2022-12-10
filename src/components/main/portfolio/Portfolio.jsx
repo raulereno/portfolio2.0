@@ -10,7 +10,6 @@ const Portfolio = () => {
     slide: 1,
   });
   function openLightboxOnSlide(number) {
-    console.log(number);
     setLightboxController({
       toggler: !lightboxController.toggler,
       slide: number,
@@ -27,7 +26,7 @@ const Portfolio = () => {
       <div className="container_projects">
         {projects.map((e, i) => {
           return (
-            <Proyectos toggler={openLightboxOnSlide} key={i} proyect={e} />
+            <Proyectos toggler={openLightboxOnSlide} key={e.id} proyect={e} />
           );
         })}
       </div>

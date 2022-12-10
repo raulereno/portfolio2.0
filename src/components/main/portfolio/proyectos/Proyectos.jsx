@@ -1,6 +1,6 @@
 import React from "react";
 
-const Proyectos = ({ proyect, toggler, key }) => {
+const Proyectos = ({ proyect, toggler }) => {
   return (
     <div key={proyect.id} className="cards_proyects">
       <img src={proyect.image} alt="" />
@@ -9,7 +9,7 @@ const Proyectos = ({ proyect, toggler, key }) => {
           <h4 className="proyect-name">{proyect.name}</h4>
           <div className="portfolio-links">
             <span className="buttonDetail" onClick={() => toggler(proyect.id)}>
-              Detalles
+              Ver detalles
             </span>
 
             <a href={proyect.link} target="_blank" rel="noreferrer">

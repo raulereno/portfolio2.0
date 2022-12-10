@@ -40,8 +40,11 @@
         li {
           border-left: 3px solid $secondary-color;
           padding-left: 1rem;
-          margin: 0.5rem 0;
+          margin: 1.5rem 0;
           color: $font-ligth;
+          h4 {
+            text-decoration: underline 1px;
+          }
           a {
             color: #4343ff;
           }
@@ -57,6 +60,8 @@
         padding: 0;
 
         li {
+          margin: 1.5rem 0;
+
           // .circle_list{
           //     background-image: url("../../../../assets/circle-solid.svg");
           //     background-repeat: no-repeat;
@@ -73,5 +78,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #container_resume {
+    display: none;
   }
 }

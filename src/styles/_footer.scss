@@ -37,3 +37,21 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .container_footer {
+    background-color: $secondary-color;
+    height: auto;
+    .socialMedias {
+      a {
+        svg {
+          margin-right: 10px;
+          fill: black;
+        }
+        .svgCV {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

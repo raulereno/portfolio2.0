@@ -47,6 +47,7 @@ const SocialMedias = () => {
           x="0px"
           y="0px"
           viewBox="0 0 43.916 43.916"
+          className="svgCV"
         >
           <g>
             <path
