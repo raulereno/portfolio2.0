@@ -72,7 +72,7 @@ const Contact = () => {
             </div>
             <div className="location-text">
               <h4>Email:</h4>
-              <p>raulereno@gmail.com</p>
+              <p>raulereno1997@gmail.com</p>
             </div>
           </div>
           <div className="email">
@@ -83,7 +83,7 @@ const Contact = () => {
             </div>
             <div className="email-text">
               <h4>Locacion:</h4>
-              <p>Argentina, Cordoba, Villa Carlos Paz</p>
+              <p>Argentina, Cordoba</p>
             </div>
           </div>
         </div>

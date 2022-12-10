@@ -22,7 +22,7 @@ const SocialMedias = () => {
         </svg>
       </a>
       <a
-        href="mailto:raulereno@gmail.com"
+        href="mailto:raulereno1997@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
