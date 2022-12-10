@@ -17,6 +17,22 @@ const Resume = () => {
           <ul>
             <li>
               <h4>
+                <b>Full Stack Developer</b>
+              </h4>
+              <p>
+                Bootcamp de soyHenry donde aprendí a desarrollar paginas web con
+                el stack PERN
+              </p>
+              <a
+                href="https://certificates.soyhenry.com/cert?id=236bee14-f685-4331-b118-5b0609495d0e"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver Certificado
+              </a>
+            </li>
+            <li>
+              <h4>
                 <b>Front-End React</b>
               </h4>
               <p>
@@ -31,14 +47,7 @@ const Resume = () => {
               >
                 Ver Certificado
               </a>
-            </li>
-            <li>
-              <h4>
-                <b>Full Stack Developer</b>
-              </h4>
-              <p>...En curso en SoyHenry, stack PERN</p>
-            </li>
-            <li>
+
               <h4>
                 <b>Full Stack Developer</b>
               </h4>
@@ -46,7 +55,7 @@ const Resume = () => {
             </li>
             <li>
               <h4>
-                <b>Curso de Fundamentos de la programacion</b>
+                <b>Curso de Fundamentos de la programación</b>
               </h4>
               <p>
                 Obtenido en la Universidad Tecnologica Nacional Facultad

@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { validate, validateForm } from "./validate";
+import Swal from "sweetalert2";
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -38,6 +39,12 @@ const Contact = () => {
         user_email: "",
         user_subject: "",
         message: "",
+      });
+      Swal.fire({
+        icon: "success",
+        text: "Su email ha sido enviado, en la brevedad le estare contestando.",
+        background: "#000718",
+        color: "white",
       });
     }
     console.log(errors);

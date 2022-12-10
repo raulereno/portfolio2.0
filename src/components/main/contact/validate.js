@@ -2,11 +2,7 @@ export const validate = (input) => {
   let errors = {};
 
   if (!input.user_name) {
-  } else if (
-    !/^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1])[a-zA-ZÀ-ÿ\u00f1\u00d1 ]+$/i.test(
-      input.user_name
-    )
-  ) {
+  } else if (!/^[a-zA-ZÀ-ÿ\u00f1\u00d1 ]+$/i.test(input.user_name)) {
     errors.user_name = "Su nombre no puede contener numeros";
   }
   if (!input.user_email) {
