@@ -7,21 +7,21 @@ const DetailProyects = ({ proyect }) => {
       {proyect.name.includes("En progreso") ? (
         <img src={proyect.image} alt="topSecret" className="imgTopSecret" />
       ) : (
-        <div>
+        <div className="project">
           <div className="container_img-tecnologies">
             {proyect.tecnologiesImg
               ?.filter((e) => proyect.tecnologies.includes(e.name))
-              .map((e) => {
+              .map((e, i) => {
                 if (e.name === "Auth0") {
                   return (
-                    <div className="container_img-tecs">
+                    <div key={i} className="container_img-tecs">
                       <span>{e.name}</span>
                       <img className="imgAuth0" src={e.img} alt="" srcSet="" />
                     </div>
                   );
                 } else if (e.name === "Express") {
                   return (
-                    <div className="container_img-tecs">
+                    <div key={i} className="container_img-tecs">
                       <span>{e.name}</span>
                       <img
                         className="imgExpress"
@@ -33,7 +33,7 @@ const DetailProyects = ({ proyect }) => {
                   );
                 }
                 return (
-                  <div className="container_img-tecs">
+                  <div key={i} className="container_img-tecs">
                     <span>{e.name}</span>
                     <img src={e.img} alt="" srcSet="" />
                   </div>

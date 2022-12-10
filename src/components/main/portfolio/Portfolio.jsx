@@ -3,19 +3,9 @@ import Proyectos from "./proyectos/Proyectos";
 import { projects } from "./projects";
 import FsLightbox from "fslightbox-react";
 import DetailProyects from "./proyectosDetail/DetailProyects";
+import GLightbox from "glightbox";
 
 const Portfolio = () => {
-  const [lightboxController, setLightboxController] = useState({
-    toggler: false,
-    slide: 1,
-  });
-  function openLightboxOnSlide(number) {
-    setLightboxController({
-      toggler: !lightboxController.toggler,
-      slide: number,
-    });
-  }
-
   return (
     <section id="container_portfolio">
       <h2 className="portfolio_title">Portfolio</h2>
@@ -25,24 +15,9 @@ const Portfolio = () => {
       </p>
       <div className="container_projects">
         {projects.map((e, i) => {
-          return (
-            <Proyectos toggler={openLightboxOnSlide} key={e.id} proyect={e} />
-          );
+          return <Proyectos key={e.id} proyect={e} />;
         })}
       </div>
-      <FsLightbox
-        toggler={lightboxController.toggler}
-        sources={projects
-          .filter((e) => e.name !== "En progreso")
-          .map((e, i) => {
-            return (
-              <div className="container_detail">
-                <DetailProyects key={i} proyect={e} />
-              </div>
-            );
-          })}
-        slide={lightboxController.slide}
-      />
     </section>
   );
 };

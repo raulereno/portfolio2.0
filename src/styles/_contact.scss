@@ -161,7 +161,6 @@
 }
 @media screen and (max-width: 600px) {
   #container_contact {
-    display: none;
     background-color: $base-color;
     margin-top: 0;
     padding: 35px 0;
@@ -169,45 +168,50 @@
     h2 {
       width: auto;
       text-align: center;
-      font-size: 70px;
+      font-size: 40px;
     }
     .contact {
       flex-direction: column;
       align-items: center;
       height: 100%;
       .location {
+        margin-top: 10px;
+
+        justify-content: center;
         .location-icon {
-          width: 120px;
-          height: 120px;
+          width: 50px;
+          height: 50px;
           svg {
-            height: 70px;
-            width: 70px;
+            height: 30px;
+            width: 30px;
           }
         }
         .location-text {
           h4 {
-            font-size: 45px;
+            font-size: 25px;
           }
           p {
-            font-size: 35px;
+            font-size: 20px;
           }
         }
       }
       .email {
+        justify-content: center;
+
         .email-icon {
-          width: 120px;
-          height: 120px;
+          width: 50px;
+          height: 50px;
           svg {
-            height: 70px;
-            width: 70px;
+            height: 30px;
+            width: 30px;
           }
         }
         .email-text {
           h4 {
-            font-size: 45px;
+            font-size: 25px;
           }
           p {
-            font-size: 35px;
+            font-size: 14px;
           }
         }
       }
@@ -215,19 +219,26 @@
         margin-left: 0;
         width: 100%;
         margin-top: 25px;
-        div {
-          min-width: 350px;
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          input {
+            width: 260px;
+            margin: 0;
+            margin-bottom: 5px;
+          }
         }
         form {
           align-items: center;
 
           .input-subject {
-            width: 100%;
+            width: 260px;
+            margin-bottom: 5px;
           }
           .container_textarea {
-            min-width: 360px;
             .textarea-message {
-              width: 100%;
+              width: 300px;
             }
           }
           .buttonSubmit {

@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import { Modal } from "react-bootstrap";
+import DetailProyects from "../proyectosDetail/DetailProyects";
 
 const Proyectos = ({ proyect, toggler }) => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+
+  const handleShow = (breakpoint) => {
+    setShow(true);
+  };
+
   return (
     <div key={proyect.id} className="cards_proyects">
       <img src={proyect.image} alt="" />
@@ -8,7 +17,7 @@ const Proyectos = ({ proyect, toggler }) => {
         <div className="portfolio-info">
           <h4 className="proyect-name">{proyect.name}</h4>
           <div className="portfolio-links">
-            <span className="buttonDetail" onClick={() => toggler(proyect.id)}>
+            <span className="buttonDetail" onClick={handleShow}>
               Ver detalles
             </span>
 
@@ -24,6 +33,17 @@ const Proyectos = ({ proyect, toggler }) => {
           </div>
         </div>
       )}
+      <Modal
+        size="xl"
+        dialogClassName={"modalSize"}
+        show={show}
+        onHide={handleClose}
+      >
+        <div className="container_detail">
+          <Modal.Header closeButton bsPrefix={"closeModal"}></Modal.Header>
+          <DetailProyects proyect={proyect} />
+        </div>
+      </Modal>
     </div>
   );
 };

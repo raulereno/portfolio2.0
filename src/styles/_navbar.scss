@@ -40,6 +40,8 @@
         }
         &:hover {
           background-color: $secondary-color;
+          border-radius: 25px;
+          width: 7rem;
           cursor: pointer;
           svg {
             fill: #dae0ff;
@@ -50,10 +52,7 @@
           height: 20px;
           fill: white;
         }
-        &:hover {
-          border-radius: 25px;
-          width: 7rem;
-        }
+
         &:hover > a span {
           display: block;
         }
@@ -66,6 +65,65 @@
 }
 @media screen and (max-width: 600px) {
   .container_navbar {
-    display: none;
+    width: 0;
+    transition: 0.3s;
+    .navbar {
+      width: 0;
+      ul {
+        width: 0;
+        li {
+          width: 0;
+          margin: 0;
+          padding: 0;
+          span {
+            width: 0;
+          }
+          svg {
+            width: 0;
+          }
+        }
+      }
+    }
+    &.showNav {
+      display: flex;
+      position: fixed;
+      z-index: 6;
+      width: 100%;
+      background-color: $base-color;
+      transition: 1s;
+      .navbar {
+        width: 100%;
+        justify-content: center;
+        ul {
+          width: auto;
+          .resumenNav {
+            display: none;
+          }
+          li,
+          .scrollto.active {
+            width: 180px;
+            border-radius: 25px;
+            margin: 15px;
+
+            background-color: #276880;
+            a {
+              display: flex;
+              span {
+                width: auto;
+
+                display: block;
+                background-color: $secondary-color;
+                border-radius: 25px;
+                cursor: pointer;
+              }
+              svg {
+                width: 20px;
+                fill: #dae0ff;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
