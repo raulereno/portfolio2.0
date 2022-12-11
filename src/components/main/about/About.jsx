@@ -9,19 +9,22 @@ const About = () => {
         <img src="./assets/FOTO-CV.jpeg" alt="" />
         <div>
           <p>
-            Buenass! soy Raul Ereño, un programador Full Stack especializado en
-            el stack PERN, pero en el constante aprendizaje de otras
-            tecnologías. Estos conocimientos los obtuve del Bootcamp de
-            SoyHenry, después de muchas horas de estudio.
+            Una pandemia mundial que nos cambió la vida, y yo no fui la
+            excepción, cambié los libros de leyes, Códigos y Constitución por
+            una computadora y Google. Y así empezó mi viaje en este hermoso
+            mundo del que me atrevo a decir que conozco solo el 1% y que mi
+            forma de ser me empuja a conocer cada día un poco más.
           </p>
 
           <p>
-            Después de años de estudiar la misma carrera, en dos universidades
-            distintas me di cuenta de ese campo no era para mí, que no me
-            gustaban las leyes. Por eso al investigar y con el boom de esta
-            profesión debido a la pandemia decidí de a poco ir estudiando esto,
-            y realmente me gusto porque es un desafío constante para superarse a
-            uno mismo con las cosas que hace y aprende.
+            En la actualidad me encuentro realizando proyectos en los que
+            implemento tecnologías como HMTL, CSS y JavaScript, también utilice
+            librerías como React, Bootstrap y Redux. Mi mayor orgullo fue
+            aprender Angular con Typescript en el proyecto final del bootcamp
+            soyHenry ya que había fechas de entregas que cumplir y un nuevo
+            framework que aprender, también conozco la implementación de NodeJS,
+            Express, Sequelize y PostgreSQL ya que en algunos de los proyectos
+            mencionados he necesitado un backend que me provea de información.
           </p>
         </div>
       </div>

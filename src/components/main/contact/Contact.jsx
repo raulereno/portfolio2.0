@@ -83,7 +83,7 @@ const Contact = () => {
             </div>
             <div className="email-text">
               <h4>Locacion:</h4>
-              <p>Argentina, Cordoba</p>
+              <p>Cordoba, Argentina</p>
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ const Landing = () => {
   return (
     <section id="container_landing">
       <div id="textLanding">
-        <h1>Ereño Raul</h1>
+        <h1>Ereño Raúl</h1>
         <p className="container_typing">
           Soy
           <UseTypedHooks reset={reset} />
