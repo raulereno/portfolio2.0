@@ -9,6 +9,7 @@
   transition: 0.3s;
   z-index: 1;
   overflow: hidden;
+  cursor: pointer;
   .proyect-name {
     color: $font-ligth;
   }
@@ -35,6 +36,11 @@
     width: 30px;
     height: 30px;
     fill: white;
+  }
+  &.inProgress {
+    img {
+      opacity: 1;
+    }
   }
 }
 .cards_proyects::before {
@@ -122,6 +128,22 @@
   bottom: 15px;
   right: 15px;
 }
+
+.inProgres {
+  background: rgba(255, 255, 255, 0.113);
+
+  width: 280px;
+  height: 180px;
+  margin: 0.5rem 0.5rem;
+  position: relative;
+  border-radius: 6px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+}
+//MediaQueries
 @media screen and (max-width: 600px) {
   .cards_proyects::before {
     top: 0;
@@ -132,7 +154,12 @@
   }
   .cards_proyects {
     img {
-      opacity: 0.6;
+      opacity: 0.8;
+    }
+    &.inProgres {
+      img {
+        opacity: 1;
+      }
     }
   }
   .cards_proyects .portfolio-info {
