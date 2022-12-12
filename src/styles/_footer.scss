@@ -1,10 +1,10 @@
 .container_footer {
-  background-color: #000b26;
   height: 250px;
-  padding: 25px;
+  padding: 0 100px;
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
   h2 {
     color: $font-ligth;
     text-align: center;
@@ -13,11 +13,16 @@
   .quote {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    align-items: center;
     p {
+      align-self: center;
       color: $font-ligth;
       text-align: center;
     }
     .film {
+      width: auto;
+
       align-self: flex-end;
     }
   }
@@ -25,7 +30,7 @@
     align-self: center;
     a {
       svg {
-        fill: #002b99;
+        fill: $font-dark;
         width: 50px;
         height: 50px;
         margin-right: 1.5rem;
@@ -47,23 +52,48 @@
     border-radius: 50%;
     margin: 0 10px 10px 0;
     opacity: 0.6;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   .container_footer {
-    background-color: $secondary-color;
     height: auto;
+    padding: 35px 0;
+    .quote {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      p {
+        align-self: center;
+        color: $font-ligth;
+        text-align: center;
+      }
+      .film {
+        width: auto;
+
+        align-self: flex-end;
+      }
+    }
     .socialMedias {
       a {
         svg {
           margin-right: 10px;
-          fill: black;
+          fill: white;
         }
         .svgCV {
           margin-right: 0;
         }
       }
+    }
+    .arrowUp {
+      opacity: 0.2;
     }
   }
 }
