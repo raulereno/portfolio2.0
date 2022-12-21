@@ -139,6 +139,37 @@ export let projects = [
     ],
   },
   {
+    id: 4,
+    name: "Frontend Mentor Challenges",
+    link: "https://frontendmentor-challenges-raul.netlify.app/",
+    image: "./assets/capturasProyectos/capsFrontendMentor/landing.png",
+    description:
+      "Página realizada para unir en un solo lugar todos los desafíos de FrontendMentor",
+    tecnologies: "Javascript,React,Redux",
+    captures: [
+      {
+        img: "./assets/capturasProyectos/capsFrontendMentor/newbie_projects.png",
+        title: "",
+        description: "",
+      },
+      {
+        img: "./assets/capturasProyectos/capsFrontendMentor/junior_projects.png",
+        title: "",
+        description: "",
+      },
+      {
+        img: "./assets/capturasProyectos/capsFrontendMentor/cardDetail.png",
+        title: "",
+        description: "",
+      },
+      {
+        img: "./assets/capturasProyectos/capsFrontendMentor/tipCalculator.png",
+        title: "",
+        description: "",
+      },
+    ],
+  },
+  {
     id: 3,
     name: "Not Fungible Token Ecommerce",
     link: "https://nft-ecommerce-react.netlify.app/",
@@ -172,14 +203,6 @@ export let projects = [
     ],
   },
 
-  {
-    id: 4,
-    name: "En progreso",
-    link: "",
-    image: defaultImg,
-    description: "",
-    tecnologies: "",
-  },
   {
     id: 5,
     name: "En progreso",
