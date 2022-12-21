@@ -147,6 +147,7 @@ export let projects = [
     description:
       "Página realizada para unir en un solo lugar todos los desafíos de FrontendMentor",
     tecnologies: "Javascript,React,Redux",
+    tecnologiesImg: tecnologies,
     captures: [
       {
         img: "./assets/capturasProyectos/capsFrontendMentor/newbie_projects.png",
