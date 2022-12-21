@@ -142,6 +142,7 @@ export let projects = [
     id: 4,
     name: "Frontend Mentor Challenges",
     link: "https://frontendmentor-challenges-raul.netlify.app/",
+    linkGithub: "https://github.com/raulereno/frontendmentor-challenges",
     image: "./assets/capturasProyectos/capsFrontendMentor/landing.png",
     description:
       "Página realizada para unir en un solo lugar todos los desafíos de FrontendMentor",
