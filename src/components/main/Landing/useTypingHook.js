@@ -9,13 +9,9 @@ export const UseTypedHooks = ({ reset }) => {
 
   React.useEffect(() => {
     const options = {
-      strings: [
-        "Full Stack Developer",
-        "Frontend Developer",
-        "Backend Developer",
-      ],
-      typeSpeed: 50,
-      backSpeed: 50,
+      strings: ["Full Stack Developer"],
+      typeSpeed: 150,
+      backSpeed: 150,
     };
 
     typed.current = new Typed(el.current, options);

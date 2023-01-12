@@ -39,6 +39,7 @@ const SocialMedias = () => {
         href="https://drive.google.com/file/d/1HkPomSJjFgd403nMO6aBX51RGZr5auVT/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
+        id="downloadCV"
       >
         <svg
           version="1.1"
@@ -76,6 +77,7 @@ const SocialMedias = () => {
           <g></g>
           <g></g>
         </svg>
+        <span>Descargar CV</span>
       </a>
     </div>
   );

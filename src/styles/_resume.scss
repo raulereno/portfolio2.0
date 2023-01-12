@@ -20,6 +20,7 @@
   .resume {
     display: flex;
     margin-top: 1rem;
+
     p {
       margin: 0;
     }
@@ -31,6 +32,8 @@
     }
     .education {
       width: 60%;
+      z-index: 99;
+
       h4 {
         font-size: 1.3rem;
       }

@@ -21,6 +21,7 @@
       width: 470px;
       align-self: flex-end;
       margin-left: 180px;
+      z-index: 99;
 
       form {
         display: flex;
@@ -29,16 +30,29 @@
       .inputs {
         display: flex;
         margin-bottom: 15px;
+
         input {
           width: 225px;
+          background-color: $base-color;
+          color: white;
+          &::placeholder {
+            color: $font-ligth;
+          }
         }
       }
       .input-name {
+        background-color: $base-color;
         margin-right: 1rem;
       }
       .input-subject {
         margin-bottom: 1rem;
         width: 465px;
+        background-color: $base-color;
+        color: white;
+
+        &::placeholder {
+          color: $font-ligth;
+        }
       }
       .container_textarea {
         display: flex;
@@ -46,6 +60,13 @@
         .textarea-message {
           width: 465px;
           height: 200px;
+          background-color: $base-color;
+          resize: none;
+          color: white;
+
+          &::placeholder {
+            color: $font-ligth;
+          }
         }
       }
       .buttonSubmit {
@@ -63,7 +84,6 @@
           background-color: #00435b;
           transform: scale(1.1);
           cursor: pointer;
-          font-weight: bold;
         }
       }
       .disableButton {
@@ -96,6 +116,7 @@
         width: 50px;
         height: 50px;
         transition: 0.2s;
+        z-index: 99;
 
         &:hover {
           background-color: $font-ligth;
@@ -123,6 +144,7 @@
     .email {
       display: flex;
       align-items: center;
+
       .email-icon {
         display: flex;
         justify-content: center;
@@ -132,6 +154,8 @@
         width: 50px;
         height: 50px;
         transition: 0.2s;
+        z-index: 99;
+
         &:hover {
           background-color: $font-ligth;
           svg {
