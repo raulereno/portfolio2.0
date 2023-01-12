@@ -36,7 +36,7 @@ const SocialMedias = () => {
       </a>
 
       <a
-        href="https://drive.google.com/file/d/1HkPomSJjFgd403nMO6aBX51RGZr5auVT/view?usp=sharing"
+        href="https://drive.google.com/file/d/14SrB_SWNoL7pNyWyxXrUySu6wSurhYiI/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
         id="downloadCV"
