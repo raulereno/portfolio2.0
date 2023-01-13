@@ -9,14 +9,6 @@ const About = () => {
         <img src="./assets/FOTO-CV.jpeg" alt="" />
         <div>
           <p>
-            Una pandemia mundial que nos cambió la vida, y yo no fui la
-            excepción, cambié los libros de leyes, Códigos y Constitución por
-            una computadora y Google. Y así empezó mi viaje en este hermoso
-            mundo del que me atrevo a decir que conozco solo el 1% y que mi
-            forma de ser me empuja a conocer cada día un poco más.
-          </p>
-
-          <p>
             En la actualidad me encuentro realizando proyectos en los que
             implemento tecnologías como HMTL, CSS y JavaScript, también utilice
             librerías como React, Bootstrap y Redux. Mi mayor orgullo fue
