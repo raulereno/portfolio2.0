@@ -25,6 +25,9 @@ h6 {
 .container_main {
   display: flex;
   background-color: $base-color;
+  #container_components {
+    width: 95%;
+  }
 }
 
 .responsive_nav {
@@ -46,5 +49,10 @@ h6 {
 @media screen and (max-width: 600px) {
   .responsive_nav {
     display: flex;
+  }
+  .container_main {
+    #container_components {
+      width: 100%;
+    }
   }
 }

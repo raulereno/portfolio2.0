@@ -42,7 +42,7 @@ const Main = () => {
       )}
       <ParticlesBackground />
       <Navbar showNav={showNav} setShowNav={setShowNav} />
-      <div>
+      <div id="container_components">
         <Landing />
         <Portfolio />
         <Resume />

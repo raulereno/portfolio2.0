@@ -39,7 +39,7 @@ const Navbar = ({ showNav, setShowNav }) => {
           <li
             onClick={() => setShowNav()}
             className={`scrollto resumenNav ${
-              scrollY > 1000 && scrollY < 1800 ? "active" : ""
+              scrollY > 1000 && scrollY < 1600 ? "active" : ""
             }`}
           >
             <a href="#container_resume">
@@ -52,7 +52,7 @@ const Navbar = ({ showNav, setShowNav }) => {
           <li
             onClick={() => setShowNav()}
             className={`scrollto ${
-              scrollY > 1800 && scrollY < 2500 ? "active" : ""
+              scrollY > 1600 && scrollY < 2200 ? "active" : ""
             }`}
           >
             <a href="#container_about">
@@ -63,7 +63,7 @@ const Navbar = ({ showNav, setShowNav }) => {
             </a>
           </li>
           <li
-            className={`scrollto ${scrollY > 2500 ? "active" : ""}`}
+            className={`scrollto ${scrollY > 2200 ? "active" : ""}`}
             onClick={() => setShowNav()}
           >
             <a href="#container_contact">

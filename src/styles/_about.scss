@@ -1,23 +1,25 @@
 #container_about {
   padding: 0 100px;
   margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
   h2 {
     margin-bottom: 1rem;
     border-bottom: 3px solid #276880;
     padding-bottom: 0.5rem;
-    width: 90%;
     font-size: 1.8rem;
     color: $font-ligth;
   }
 
   .info_about {
+    align-self: center;
     display: flex;
     margin-top: 80px;
+    justify-content: center;
     img {
       width: 20rem;
       height: 20rem;
       align-self: center;
-      margin-right: 2rem;
       border-radius: 8px;
       z-index: 40;
     }
@@ -39,11 +41,12 @@
     }
     div {
       align-self: center;
+      width: 50%;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       p {
-        width: 80%;
         color: $font-ligth;
+        width: 80%;
       }
     }
   }
@@ -66,12 +69,14 @@
 
     .info_about {
       flex-direction: column;
+      margin-top: 20px;
       img {
         margin: 0;
         width: 320px;
         height: 300px;
       }
       div {
+        width: 100%;
         p {
           width: 100%;
           text-align: center;

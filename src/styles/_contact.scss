@@ -2,15 +2,17 @@
   margin-top: 7rem;
   padding: 0 100px;
   margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
   h2 {
     color: $font-ligth;
     border-bottom: 3px solid #276880;
     padding-bottom: 0.5rem;
-    width: 90%;
     font-size: 1.8rem;
     color: $font-ligth;
   }
   .contact {
+    align-self: center;
     display: flex;
     color: $font-ligth;
     align-items: center;
@@ -188,7 +190,7 @@
   #container_contact {
     background-color: $base-color;
     margin-top: 0;
-    padding: 35px 0;
+    padding: 25px 0;
     margin-bottom: 5px;
     h2 {
       width: auto;
