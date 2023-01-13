@@ -90,7 +90,7 @@
     &.showNav {
       display: flex;
       position: fixed;
-      z-index: 6;
+      z-index: 90;
       width: 100%;
       background-color: $base-color;
       transition: 1s;
