@@ -263,7 +263,7 @@ export let projects = {
     },
     {
       id: 2,
-      name: "Proyecto individual Bootcamp",
+      name: "Individual Bootcamp project.",
       link: "https://pi-dogs-henry.netlify.app/",
       image: "./assets/capturasProyectos/pi-dogs.png",
 

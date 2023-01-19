@@ -1,6 +1,6 @@
 import React from "react";
 import Proyectos from "./proyectos/Proyectos";
-import { projects } from "./projects";
+import { projects } from "../../../const/projects";
 
 const Portfolio = ({ leng_portfolio, lenguage }) => {
   return (
