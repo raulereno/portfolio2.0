@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { validate, validateForm } from "../../../const/validateForm";
 import Swal from "sweetalert2";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -147,6 +148,10 @@ const Contact = ({ leng_contact }) => {
               ></textarea>
               <span className="errors">{errors.message}</span>
             </div>
+            <ReCAPTCHA
+              sitekey={"6Le3sQ4kAAAAAPxzO8dGquuvUO-LLdYsnMqaC3Bt"}
+              onChange={sendMail}
+            />
             <button
               disabled={Object.keys(errors).length !== 0}
               className={`buttonSubmit ${
