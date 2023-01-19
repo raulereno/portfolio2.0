@@ -188,5 +188,30 @@
         height: 90vh;
       }
     }
+    #container_features {
+      left: 0;
+      top: 5px;
+      z-index: 40;
+      button {
+        svg {
+          width: 22px;
+          height: 22px;
+          fill: black;
+        }
+        span {
+          color: black;
+        }
+        &:hover {
+          transform: scale(1.06);
+          span {
+            color: black;
+            font-weight: bold;
+          }
+          svg {
+            fill: black;
+          }
+        }
+      }
+    }
   }
 }
