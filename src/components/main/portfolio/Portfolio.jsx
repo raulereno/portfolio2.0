@@ -2,26 +2,18 @@ import React from "react";
 import Proyectos from "./proyectos/Proyectos";
 import { projects } from "./projects";
 
-const Portfolio = () => {
+const Portfolio = ({ leng_portfolio, lenguage }) => {
   return (
     <section id="container_portfolio">
-      <h2 className="portfolio_title">Portfolio</h2>
-      <p className="portfolio_text">
-        Proyectos que realice y cuales tecnologías implemente en cada uno de
-        estos proyectos.
-      </p>
+      <h2 className="portfolio_title">{leng_portfolio.title}</h2>
+      <p className="portfolio_text">{leng_portfolio.description}</p>
       <div className="container_projects">
-        {projects.map((e, i) => {
-          return <Proyectos key={e.id} proyect={e} />;
+        {projects[lenguage].map((e, i) => {
+          return <Proyectos key={e.id} proyect={e} lenguage={lenguage} />;
         })}
       </div>
     </section>
   );
 };
 
-/*
- <div style={{ width: "200px", height: "100px" }}>
-            <DetailProyects>A wrapped component.</DetailProyects>
-          </div>,
-*/
 export default Portfolio;

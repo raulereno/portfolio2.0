@@ -7,14 +7,15 @@ import Contact from "./contact/Contact";
 import Footer from "./footer/Footer";
 import { useState } from "react";
 import ParticlesBackground from "./ParticlesBackground/ParticlesBackground";
+import lenguages from "../../const/lenguage";
 
 const Main = () => {
   const [showNav, setShowNav] = useState(false);
+  const [lenguage, setLenguage] = useState("es");
 
   const activateNav = () => {
     setShowNav(!showNav);
   };
-
   return (
     <div className="container_main">
       {showNav ? (
@@ -41,14 +42,29 @@ const Main = () => {
         </button>
       )}
       <ParticlesBackground />
-      <Navbar showNav={showNav} setShowNav={setShowNav} />
+      <Navbar
+        showNav={showNav}
+        setShowNav={setShowNav}
+        leng_nav={lenguages[`${lenguage}`].nav}
+      />
       <div id="container_components">
-        <Landing />
-        <Portfolio />
-        <Resume />
-        <About />
-        <Contact />
-        <Footer />
+        <Landing
+          setLenguage={setLenguage}
+          lenguage={lenguage}
+          leng_landing={lenguages[`${lenguage}`].landing}
+          leng_social={lenguages[`${lenguage}`].links}
+        />
+        <Portfolio
+          lenguage={lenguage}
+          leng_portfolio={lenguages[`${lenguage}`].portfolio}
+        />
+        <Resume leng_resume={lenguages[`${lenguage}`].resume} />
+        <About leng_about={lenguages[`${lenguage}`].about} />
+        <Contact leng_contact={lenguages[`${lenguage}`].contact} />
+        <Footer
+          leng_footer={lenguages[`${lenguage}`].footer}
+          leng_social={lenguages[`${lenguage}`].links}
+        />
       </div>
     </div>
   );

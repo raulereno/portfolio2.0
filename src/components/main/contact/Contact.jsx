@@ -8,7 +8,7 @@ const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 
-const Contact = () => {
+const Contact = ({ leng_contact }) => {
   const [form, setForm] = useState({
     user_name: "",
     user_email: "",
@@ -42,7 +42,7 @@ const Contact = () => {
       });
       Swal.fire({
         icon: "success",
-        text: "Su email ha sido enviado, en la brevedad le estare contestando.",
+        text: `${leng_contact.alert.text}`,
         background: "#000718",
         color: "white",
       });
@@ -61,7 +61,7 @@ const Contact = () => {
 
   return (
     <section id="container_contact">
-      <h2>Contacto</h2>
+      <h2>{leng_contact.title}</h2>
       <div className="contact">
         <div>
           <div className="location">
@@ -82,8 +82,8 @@ const Contact = () => {
               </svg>
             </div>
             <div className="email-text">
-              <h4>Locación:</h4>
-              <p>Córdoba, Argentina</p>
+              <h4>{leng_contact.location}</h4>
+              <p>Argentina</p>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                     type="text"
                     name="user_name"
                     id=""
-                    placeholder="Tu nombre"
+                    placeholder={leng_contact.form.name}
                     value={form.user_name}
                     onChange={handleInputs}
                   />
@@ -113,7 +113,7 @@ const Contact = () => {
                     type="text"
                     name="user_email"
                     id=""
-                    placeholder="Tu email"
+                    placeholder={leng_contact.form.email}
                     value={form.user_email}
                     onChange={handleInputs}
                   />
@@ -127,7 +127,7 @@ const Contact = () => {
                 type="text"
                 name="user_subject"
                 id=""
-                placeholder="Asunto"
+                placeholder={leng_contact.form.subject}
                 value={form.user_subject}
                 onChange={handleInputs}
               />
@@ -138,7 +138,7 @@ const Contact = () => {
                 id=""
                 cols="30"
                 rows="10"
-                placeholder="Mensaje"
+                placeholder={leng_contact.form.message}
                 className={`textarea-message ${
                   errors.message && "errorsInputs"
                 }`}
@@ -154,7 +154,7 @@ const Contact = () => {
               }`}
               type="submit"
             >
-              Enviar mensaje
+              {leng_contact.form.submit}
             </button>
           </form>
         </div>

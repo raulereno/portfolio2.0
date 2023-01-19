@@ -1,7 +1,7 @@
 #container_landing {
   display: flex;
   justify-content: space-around;
-
+  position: relative;
   h1 {
     color: $font-ligth;
 
@@ -90,6 +90,37 @@
           transform: scale(1.05);
           font-size: 14px;
           font-weight: bolder;
+        }
+      }
+    }
+  }
+  #container_features {
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    button {
+      border: none;
+      background-color: transparent;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        margin-left: 6px;
+      }
+      svg {
+        width: 22px;
+        height: 22px;
+        fill: white;
+      }
+      &:hover {
+        transform: scale(1.06);
+        span {
+          color: white;
+          font-weight: bold;
+        }
+        svg {
+          fill: white;
         }
       }
     }

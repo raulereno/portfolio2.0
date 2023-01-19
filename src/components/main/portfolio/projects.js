@@ -63,154 +63,307 @@ export let tecnologies = [
   },
 ];
 
-export let projects = [
-  {
-    id: 1,
-    name: "Rentten - Alojamientos",
-    link: "https://rent-ten.vercel.app/home",
-    linkGithub: "https://github.com/raulereno/rent-ten",
-    image: "./assets/capturasProyectos/logo_rentten-white.png",
-    description:
-      "Proyecto grupal final del bootcamp soyHenry en donde junto a otros 5 compañeros realizamos un proyecto dedicado a aquellas personas que buscan alquilar y/o publicar alojamientos temporarios.",
-    tecnologies:
-      "Angular,Typescript,NGRX,Node.js,Express,PostgreSQL        Sequelize,MercadoPago, Nodemailer,Auth0",
-    tecnologiesImg: tecnologies,
+export let projects = {
+  es: [
+    {
+      id: 1,
+      name: "Rentten - Alojamientos",
+      link: "https://rent-ten.vercel.app/home",
+      linkGithub: "https://github.com/raulereno/rent-ten",
+      image: "./assets/capturasProyectos/logo_rentten-white.png",
+      description:
+        "Proyecto grupal final del bootcamp soyHenry en donde junto a otros 5 compañeros realizamos un proyecto dedicado a aquellas personas que buscan alquilar y/o publicar alojamientos temporarios.",
+      tecnologies:
+        "Angular,Typescript,NGRX,Node.js,Express,PostgreSQL        Sequelize,MercadoPago, Nodemailer,Auth0",
+      tecnologiesImg: tecnologies,
 
-    captures: [
-      {
-        img: "./assets/capturasProyectos/capsRent/cap_home.png",
-        title: "Home",
-        description: "Vista inicial del proyecto",
-      },
-      {
-        img: "./assets/capturasProyectos/capsRent/cap_login.png",
-        title: "Login",
-        description: "Logueo con Auth0",
-      },
-      {
-        img: "./assets/capturasProyectos/capsRent/cap_detail.png",
-        title: "Detail",
-        description: "Detalle de un alojamiento",
-      },
-      {
-        img: "./assets/capturasProyectos/capsRent/cap_create.png",
-        title: "Create",
-        description: "Creación de un alojamiento",
-      },
-      {
-        img: "./assets/capturasProyectos/capsRent/cap_perfil.png",
-        title: "Perfil",
-        description: "Vista del perfil de un usuario",
-      },
-      {
-        img: "./assets/capturasProyectos/capsRent/cap_payment.png",
-        title: "Pago",
-        description: "Reserva de un alojamiento",
-      },
-    ],
-  },
-  {
-    id: 2,
-    name: "Proyecto individual Bootcamp",
-    link: "https://pi-dogs-henry.netlify.app/",
-    image: "./assets/capturasProyectos/pi-dogs.png",
+      captures: [
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_home.png",
+          title: "Home",
+          description: "Vista inicial del proyecto",
+        },
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_login.png",
+          title: "Login",
+          description: "Logueo con Auth0",
+        },
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_detail.png",
+          title: "Detail",
+          description: "Detalle de un alojamiento",
+        },
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_create.png",
+          title: "Create",
+          description: "Creación de un alojamiento",
+        },
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_perfil.png",
+          title: "Perfil",
+          description: "Vista del perfil de un usuario",
+        },
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_payment.png",
+          title: "Pago",
+          description: "Reserva de un alojamiento",
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "Proyecto individual Bootcamp",
+      link: "https://pi-dogs-henry.netlify.app/",
+      image: "./assets/capturasProyectos/pi-dogs.png",
 
-    linkGithub: "https://github.com/raulereno/app-henry-deploy",
-    description:
-      "Proyecto individual realizado en el bootcamp SoyHenry donde aprendi a hacer un sitio web desde el frontend del mismo hasta el backend, donde hicimos nuesta propia base de datos con SQL",
-    tecnologies: "Javascript,React,Redux,NodeJs,Express,Sequelize,PostgreSQL",
-    tecnologiesImg: tecnologies,
-    captures: [
-      {
-        img: "./assets/capturasProyectos/capsPI/cap_cards.png",
-        title: "",
-        description: "",
-      },
-      {
-        img: "./assets/capturasProyectos/capsPI/cap_loader.png",
-        title: "",
-        description: "",
-      },
-      {
-        img: "./assets/capturasProyectos/capsPI/cap_creacion.png",
-        title: "",
-        description: "",
-      },
-    ],
-  },
-  {
-    id: 4,
-    name: "Frontend Mentor Challenges",
-    link: "https://frontendmentor-challenges-raul.netlify.app/",
-    linkGithub: "https://github.com/raulereno/frontendmentor-challenges",
-    image: "./assets/capturasProyectos/capsFrontendMentor/landing.png",
-    description:
-      "Página realizada para unir en un solo lugar todos los desafíos de FrontendMentor",
-    tecnologies: "Javascript,React,Redux",
-    tecnologiesImg: tecnologies,
-    captures: [
-      {
-        img: "./assets/capturasProyectos/capsFrontendMentor/newbie_projects.png",
-        title: "",
-        description: "",
-      },
-      {
-        img: "./assets/capturasProyectos/capsFrontendMentor/junior_projects.png",
-        title: "",
-        description: "",
-      },
-      {
-        img: "./assets/capturasProyectos/capsFrontendMentor/cardDetail.png",
-        title: "",
-        description: "",
-      },
-      {
-        img: "./assets/capturasProyectos/capsFrontendMentor/tipCalculator.png",
-        title: "",
-        description: "",
-      },
-    ],
-  },
-  {
-    id: 3,
-    name: "Not Fungible Token Ecommerce",
-    link: "https://nft-ecommerce-react.netlify.app/",
-    image: "./assets/capturasProyectos/nft.png",
-    linkGithub: "https://github.com/raulereno/cursoReact-desafios",
-    description:
-      "Proyecto final del curso de React en CoderHouse donde utilice React como tecnologia del frontend y firebase como base de datos para consultar",
-    tecnologies: "Javascript,React y Firebase",
-    tecnologiesImg: tecnologies,
-    captures: [
-      {
-        img: "./assets/capturasProyectos/capsNFT/cap_nft.png",
-        title: "",
-        description: "",
-      },
-      {
-        img: "./assets/capturasProyectos/capsNFT/cap_nftDetail.png",
-        title: "",
-        description: "",
-      },
-      {
-        img: "./assets/capturasProyectos/capsNFT/cap_nftCart.png",
-        title: "",
-        description: "",
-      },
-      {
-        img: "./assets/capturasProyectos/capsNFT/cap_nftPayment.png",
-        title: "",
-        description: "",
-      },
-    ],
-  },
+      linkGithub: "https://github.com/raulereno/app-henry-deploy",
+      description:
+        "Proyecto individual realizado en el bootcamp SoyHenry donde aprendi a hacer un sitio web desde el frontend del mismo hasta el backend, donde hicimos nuesta propia base de datos con SQL",
+      tecnologies: "Javascript,React,Redux,NodeJs,Express,Sequelize,PostgreSQL",
+      tecnologiesImg: tecnologies,
+      captures: [
+        {
+          img: "./assets/capturasProyectos/capsPI/cap_cards.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsPI/cap_loader.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsPI/cap_creacion.png",
+          title: "",
+          description: "",
+        },
+      ],
+    },
+    {
+      id: 4,
+      name: "Frontend Mentor Challenges",
+      link: "https://frontendmentor-challenges-raul.netlify.app/",
+      linkGithub: "https://github.com/raulereno/frontendmentor-challenges",
+      image: "./assets/capturasProyectos/capsFrontendMentor/landing.png",
+      description:
+        "Página realizada para unir en un solo lugar todos los desafíos de FrontendMentor",
+      tecnologies: "Javascript,React,Redux",
+      tecnologiesImg: tecnologies,
+      captures: [
+        {
+          img: "./assets/capturasProyectos/capsFrontendMentor/newbie_projects.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsFrontendMentor/junior_projects.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsFrontendMentor/cardDetail.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsFrontendMentor/tipCalculator.png",
+          title: "",
+          description: "",
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "Not Fungible Token Ecommerce",
+      link: "https://nft-ecommerce-react.netlify.app/",
+      image: "./assets/capturasProyectos/nft.png",
+      linkGithub: "https://github.com/raulereno/cursoReact-desafios",
+      description:
+        "Proyecto final del curso de React en CoderHouse donde utilice React como tecnologia del frontend y firebase como base de datos para consultar",
+      tecnologies: "Javascript,React y Firebase",
+      tecnologiesImg: tecnologies,
+      captures: [
+        {
+          img: "./assets/capturasProyectos/capsNFT/cap_nft.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsNFT/cap_nftDetail.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsNFT/cap_nftCart.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsNFT/cap_nftPayment.png",
+          title: "",
+          description: "",
+        },
+      ],
+    },
 
-  {
-    id: 5,
-    name: "En progreso",
-    link: "",
-    image: defaultImg,
-    description: "",
-    tecnologies: "",
-  },
-];
+    {
+      id: 5,
+      name: "En progreso",
+      link: "",
+      image: defaultImg,
+      description: "",
+      tecnologies: "",
+    },
+  ],
+  en: [
+    {
+      id: 1,
+      name: "Rentten - Places",
+      link: "https://rent-ten.vercel.app/home",
+      linkGithub: "https://github.com/raulereno/rent-ten",
+      image: "./assets/capturasProyectos/logo_rentten-white.png",
+      description:
+        "Final group project of the soyHenry bootcamp where together with 5 other classmates we developed a project dedicated to those looking to rent and/or publish temporary accommodations.",
+      tecnologies:
+        "Angular,Typescript,NGRX,Node.js,Express,PostgreSQL        Sequelize,MercadoPago, Nodemailer,Auth0",
+      tecnologiesImg: tecnologies,
+
+      captures: [
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_home.png",
+          title: "Home",
+          description: "Initial view of the project",
+        },
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_login.png",
+          title: "Login",
+          description: "Login with Auth0",
+        },
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_detail.png",
+          title: "Detail",
+          description: "Detail of a place",
+        },
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_create.png",
+          title: "Create",
+          description: "Creating a place",
+        },
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_perfil.png",
+          title: "Perfil",
+          description: "View of a user's profile",
+        },
+        {
+          img: "./assets/capturasProyectos/capsRent/cap_payment.png",
+          title: "Pago",
+          description: "Booking of a place",
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "Proyecto individual Bootcamp",
+      link: "https://pi-dogs-henry.netlify.app/",
+      image: "./assets/capturasProyectos/pi-dogs.png",
+
+      linkGithub: "https://github.com/raulereno/app-henry-deploy",
+      description:
+        "Individual project completed in the SoyHenry bootcamp where I learned to create a website from the frontend to the backend, where we made our own database with SQL.",
+      tecnologies: "Javascript,React,Redux,NodeJs,Express,Sequelize,PostgreSQL",
+      tecnologiesImg: tecnologies,
+      captures: [
+        {
+          img: "./assets/capturasProyectos/capsPI/cap_cards.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsPI/cap_loader.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsPI/cap_creacion.png",
+          title: "",
+          description: "",
+        },
+      ],
+    },
+    {
+      id: 4,
+      name: "Frontend Mentor Challenges",
+      link: "https://frontendmentor-challenges-raul.netlify.app/",
+      linkGithub: "https://github.com/raulereno/frontendmentor-challenges",
+      image: "./assets/capturasProyectos/capsFrontendMentor/landing.png",
+      description:
+        "Page created to bring together all FrontendMentor challenges in one place.",
+      tecnologies: "Javascript,React,Redux",
+      tecnologiesImg: tecnologies,
+      captures: [
+        {
+          img: "./assets/capturasProyectos/capsFrontendMentor/newbie_projects.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsFrontendMentor/junior_projects.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsFrontendMentor/cardDetail.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsFrontendMentor/tipCalculator.png",
+          title: "",
+          description: "",
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "Not Fungible Token Ecommerce",
+      link: "https://nft-ecommerce-react.netlify.app/",
+      image: "./assets/capturasProyectos/nft.png",
+      linkGithub: "https://github.com/raulereno/cursoReact-desafios",
+      description:
+        "Final project of the React course at CoderHouse where I used React as the frontend technology and firebase as the database for querying.",
+      tecnologies: "Javascript,React y Firebase",
+      tecnologiesImg: tecnologies,
+      captures: [
+        {
+          img: "./assets/capturasProyectos/capsNFT/cap_nft.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsNFT/cap_nftDetail.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsNFT/cap_nftCart.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsNFT/cap_nftPayment.png",
+          title: "",
+          description: "",
+        },
+      ],
+    },
+
+    {
+      id: 5,
+      name: "In progress",
+      link: "",
+      image: defaultImg,
+      description: "",
+      tecnologies: "",
+    },
+  ],
+};

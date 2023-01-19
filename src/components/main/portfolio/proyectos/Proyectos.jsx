@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import DetailProyects from "../proyectosDetail/DetailProyects";
 
-const Proyectos = ({ proyect, toggler }) => {
+const Proyectos = ({ proyect, toggler, lenguage }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
 
@@ -32,7 +32,7 @@ const Proyectos = ({ proyect, toggler }) => {
       >
         <div className="container_detail">
           <Modal.Header closeButton bsPrefix={"closeModal"}></Modal.Header>
-          <DetailProyects proyect={proyect} />
+          <DetailProyects proyect={proyect} lenguage={lenguage} />
         </div>
       </Modal>
     </div>
