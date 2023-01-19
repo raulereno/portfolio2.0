@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 0 100px;
   margin-top: 6rem;
-
+  position: relative;
   .portfolio_title {
     color: $font-ligth;
     border-bottom: 3px solid #276880;
@@ -20,6 +20,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
 }
 @media screen and (max-width: 600px) {
   #container_portfolio {

@@ -48,23 +48,7 @@
       }
     }
   }
-  .arrowUp {
-    position: absolute;
-    right: 0;
-    z-index: 5;
-    bottom: 0;
-    background-color: $font-ligth;
-    padding: 15px;
-    border-radius: 50%;
-    margin: 0 10px 10px 0;
-    opacity: 0.6;
-    transition: 0.5s;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.05);
-      opacity: 1;
-    }
-  }
+  
 }
 
 @media screen and (max-width: 600px) {
