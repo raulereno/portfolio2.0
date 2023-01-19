@@ -77,6 +77,18 @@ const lenguages = {
       alert: {
         text: "Su email ha sido enviado, en la brevedad le estare contestando.",
       },
+      validationText: {
+        write: {
+          field_username: "Su nombre no puede contener numeros",
+          field_email: "Porfavor ingrese un mail valido",
+        },
+        send: {
+          field_username: "Ingrese su nombre porfavor",
+          field_email: "Ingresa un mail porfavor",
+          field_message: "Porfavor dejame un mensaje",
+          recaptcha: "Porfavor complete el recaptcha",
+        },
+      },
     },
     footer: {
       quote:
@@ -165,6 +177,18 @@ const lenguages = {
       },
       alert: {
         text: "Your email has been sent, I will be responding to you shortly.",
+      },
+      validationText: {
+        write: {
+          field_username: "Your name cannot contain numbers.",
+          field_email: "Please enter a valid email.",
+        },
+        send: {
+          field_username: "Please enter your name.",
+          field_email: "Please enter an email.",
+          field_message: "Please leave me a message.",
+          recaptcha: "Please complete the reCAPTCHA.",
+        },
       },
     },
     footer: {

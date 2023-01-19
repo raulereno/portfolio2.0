@@ -4,13 +4,14 @@ import emailjs from "@emailjs/browser";
 import { validate, validateForm } from "../../../const/validateForm";
 import Swal from "sweetalert2";
 import ReCAPTCHA from "react-google-recaptcha";
+import lenguages from "../../../const/lenguage";
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 const CAPTCHA_SITE_KEY = process.env.REACT_APP_CAPTCHA_SITE_KEY;
 
-const Contact = ({ leng_contact }) => {
+const Contact = ({ leng_contact, lenguage }) => {
   const [form, setForm] = useState({
     user_name: "",
     user_email: "",
@@ -25,14 +26,14 @@ const Contact = ({ leng_contact }) => {
     e.preventDefault();
     const recaptchaValue = recaptchaRef.current.getValue();
 
-    let aux = validateForm(form);
+    let aux = validateForm(form, lenguage);
     if (Object.keys(aux).length !== 0) {
       setErrors(aux);
     } else if (Object.keys(aux).length === 0) {
       if (recaptchaValue === "") {
         Swal.fire({
           icon: "warning",
-          text: `Porfavor complete el recaptcha`,
+          text: `${lenguages[lenguage].contact.validationText.send.recaptcha}`,
           background: "#000718",
           color: "white",
         });
@@ -72,7 +73,7 @@ const Contact = ({ leng_contact }) => {
 
     setForm({ ...form, [name]: value });
 
-    setErrors(validate({ ...form, [name]: value }));
+    setErrors(validate({ ...form, [name]: value }, lenguage));
   };
 
   return (

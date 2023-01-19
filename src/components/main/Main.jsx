@@ -69,7 +69,10 @@ const Main = () => {
         />
         <Resume leng_resume={lenguages[`${lenguage}`].resume} />
         <About leng_about={lenguages[`${lenguage}`].about} />
-        <Contact leng_contact={lenguages[`${lenguage}`].contact} />
+        <Contact
+          leng_contact={lenguages[`${lenguage}`].contact}
+          lenguage={lenguage}
+        />
         <Footer
           leng_footer={lenguages[`${lenguage}`].footer}
           leng_social={lenguages[`${lenguage}`].links}
