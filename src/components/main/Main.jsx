@@ -16,6 +16,7 @@ const Main = () => {
   const activateNav = () => {
     setShowNav(!showNav);
   };
+
   return (
     <div className="container_main">
       {showNav ? (

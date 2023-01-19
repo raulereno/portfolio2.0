@@ -46,7 +46,8 @@ const lenguages = {
           title: "Curso de Fundamentos de la programación",
           description:
             "Obtenido en la Universidad Tecnologica Nacional Facultad Regional Buenos Aires",
-          certificate: "https://postimg.cc/xqBJvHtR", //TODO: no funciona este link arreglarlo
+          certificate:
+            "https://drive.google.com/file/d/1srwet20QGbYw4jWCdAgjQt-iW2qDB8Dh/view?usp=sharing",
         },
       },
       employmentHistory: {
@@ -84,7 +85,7 @@ const lenguages = {
     },
     links: {
       linkedin: "https://www.linkedin.com/in/raulereno/",
-      cv: "https://drive.google.com/file/d/1vDygneVPqvgAQJ0k0A78_os6F0yDXGij/view?usp=sharing",
+      cv: "https://drive.google.com/file/d/17E-mw3L4-S1pnN7gmb0m8-BC8jTekSDX/view?usp=sharing",
     },
   },
   en: {
@@ -134,7 +135,8 @@ const lenguages = {
           title: "Curso de Fundamentos de la programación",
           description:
             "Obtained from National Technological University, Buenos Aires Regional Faculty.",
-          certificate: "https://postimg.cc/xqBJvHtR", //TODO: no funciona este link arreglarlo
+          certificate:
+            "https://drive.google.com/file/d/1srwet20QGbYw4jWCdAgjQt-iW2qDB8Dh/view?usp=sharing",
         },
       },
       employmentHistory: {

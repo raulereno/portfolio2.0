@@ -50,7 +50,7 @@ const Resume = ({ leng_resume }) => {
               </h4>
               <p>{leng_resume.education.utnfr.description}</p>
               <a
-                href="https://postimg.cc/xqBJvHtR"
+                href={leng_resume.education.utnfr.certificate}
                 target="_blank"
                 rel="noopener noreferrer"
               >

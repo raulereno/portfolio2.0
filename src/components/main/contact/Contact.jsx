@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-redundant-roles */
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { validate, validateForm } from "./validate";
+import { validate, validateForm } from "../../../const/validateForm";
 import Swal from "sweetalert2";
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;

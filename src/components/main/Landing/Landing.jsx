@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SocialMedias from "../socialMedias/SocialMedias";
-import { UseTypedHooks } from "./useTypingHook";
+import { UseTypedHooks } from "../../../hooks/useTypingHook";
 
 const Landing = ({ lenguage, setLenguage, leng_landing, leng_social }) => {
   const [reset, setReset] = useState(false);
