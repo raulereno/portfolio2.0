@@ -14,11 +14,13 @@ const Proyectos = ({ proyect, toggler, lenguage }) => {
     <div
       key={proyect.id}
       className={`${
-        proyect.name.includes("En progreso") ? "inProgres" : "cards_proyects"
+        ["En progreso", "In progress"].includes(proyect.name)
+          ? "inProgres"
+          : "cards_proyects"
       }`}
     >
       <img src={proyect.image} alt="" />
-      {!proyect.name.includes("En progreso") && (
+      {!["En progreso", "In progress"].includes(proyect.name) && (
         <div className="portfolio-info" onClick={handleShow}>
           <h4 className="proyect-name">{proyect.name}</h4>
           <div className="portfolio-links"></div>
