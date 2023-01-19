@@ -8,6 +8,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+const CAPTCHA_SITE_KEY = process.env.REACT_APP_CAPTCHA_SITE_KEY;
 
 const Contact = ({ leng_contact }) => {
   const [form, setForm] = useState({
@@ -19,39 +20,53 @@ const Contact = ({ leng_contact }) => {
   const [errors, setErrors] = useState({});
 
   const form2 = useRef();
-
+  const recaptchaRef = React.createRef();
   const sendMail = (e) => {
     e.preventDefault();
-    let aux = validateForm(form);
+    const recaptchaValue = recaptchaRef.current.getValue();
 
+    let aux = validateForm(form);
     if (Object.keys(aux).length !== 0) {
       setErrors(aux);
     } else if (Object.keys(aux).length === 0) {
-      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form2.current, PUBLIC_KEY).then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-      setForm({
-        user_name: "",
-        user_email: "",
-        user_subject: "",
-        message: "",
-      });
-      Swal.fire({
-        icon: "success",
-        text: `${leng_contact.alert.text}`,
-        background: "#000718",
-        color: "white",
-      });
+      if (recaptchaValue === "") {
+        Swal.fire({
+          icon: "warning",
+          text: `Porfavor complete el recaptcha`,
+          background: "#000718",
+          color: "white",
+        });
+      } else {
+        const params = {
+          ...form,
+          "g-recaptcha-response": recaptchaValue,
+        };
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, params, PUBLIC_KEY).then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+        setForm({
+          user_name: "",
+          user_email: "",
+          user_subject: "",
+          message: "",
+        });
+        Swal.fire({
+          icon: "success",
+          text: `${leng_contact.alert.text}`,
+          background: "#000718",
+          color: "white",
+        });
+      }
     }
-    console.log(errors);
   };
 
   const handleInputs = (e) => {
+    console.log(e.target);
     const name = e.target.name;
     const value = e.target.value;
 
@@ -67,8 +82,8 @@ const Contact = ({ leng_contact }) => {
         <div>
           <div className="location">
             <div className="location-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
               </svg>
             </div>
             <div className="location-text">
@@ -78,8 +93,8 @@ const Contact = ({ leng_contact }) => {
           </div>
           <div className="email">
             <div className="email-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z" />
               </svg>
             </div>
             <div className="email-text">
@@ -148,19 +163,28 @@ const Contact = ({ leng_contact }) => {
               ></textarea>
               <span className="errors">{errors.message}</span>
             </div>
-            <ReCAPTCHA
-              sitekey={"6Le3sQ4kAAAAAPxzO8dGquuvUO-LLdYsnMqaC3Bt"}
-              onChange={sendMail}
-            />
-            <button
-              disabled={Object.keys(errors).length !== 0}
-              className={`buttonSubmit ${
-                Object.keys(errors).length !== 0 && "disableButton"
-              }`}
-              type="submit"
-            >
-              {leng_contact.form.submit}
-            </button>
+            <div id="submit_recaptcha">
+              <div>
+                {ReCAPTCHA && (
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey={CAPTCHA_SITE_KEY}
+                    onChange={sendMail}
+                    id="recaptcha"
+                  />
+                )}
+                <span className="errors">{errors.recaptcha}</span>
+              </div>
+              <button
+                disabled={Object.keys(errors).length !== 0}
+                className={`buttonSubmit ${
+                  Object.keys(errors).length !== 0 && "disableButton"
+                }`}
+                type="submit"
+              >
+                {leng_contact.form.submit}
+              </button>
+            </div>
           </form>
         </div>
       </div>

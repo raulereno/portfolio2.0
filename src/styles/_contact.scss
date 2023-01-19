@@ -16,7 +16,7 @@
     display: flex;
     color: $font-ligth;
     align-items: center;
-    height: 420px;
+    height: 500px;
 
     .container_form {
       margin-left: 4rem;
@@ -24,15 +24,26 @@
       align-self: flex-end;
       margin-left: 180px;
       z-index: 40;
-
       form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        #submit_recaptcha {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+          #recaptcha {
+            min-width: 300px;
+          }
+        }
       }
       .inputs {
         display: flex;
         margin-bottom: 15px;
-
+        div {
+          display: flex;
+          flex-direction: column;
+        }
         input {
           width: 225px;
           background-color: $base-color;
@@ -79,7 +90,7 @@
         color: $font-ligth;
         border: none;
         width: 140px;
-        align-self: flex-end;
+        align-self: flex-start;
         padding: 10px;
         margin-right: 5px;
         border-radius: 4px;
@@ -201,6 +212,12 @@
       flex-direction: column;
       align-items: center;
       height: 100%;
+
+      form {
+        #submit_recaptcha {
+          flex-direction: column;
+        }
+      }
       .location {
         margin-top: 10px;
 
@@ -265,9 +282,7 @@
               width: 300px;
             }
           }
-          #recaptcha {
-            width: 30px !important;
-          }
+
           .buttonSubmit {
             align-self: center;
           }

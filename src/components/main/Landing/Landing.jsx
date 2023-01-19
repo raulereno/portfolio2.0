@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SocialMedias from "../socialMedias/SocialMedias";
 import { UseTypedHooks } from "../../../hooks/useTypingHook";
 
-const Landing = ({ lenguage, setLenguage, leng_landing, leng_social }) => {
+const Landing = ({ lenguage, changeLenguage, leng_landing, leng_social }) => {
   const [reset, setReset] = useState(false);
 
   setTimeout(() => {
@@ -25,7 +25,7 @@ const Landing = ({ lenguage, setLenguage, leng_landing, leng_social }) => {
       <div id="container_features">
         <button
           onClick={() => {
-            setLenguage(lenguage === "es" ? "en" : "es");
+            changeLenguage();
           }}
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

@@ -18,7 +18,6 @@ export const validate = (input) => {
 
 export const validateForm = (form) => {
   let errors = {};
-
   if (!form.user_name) {
     errors.user_name = "Ingrese su nombre porfavor";
   }

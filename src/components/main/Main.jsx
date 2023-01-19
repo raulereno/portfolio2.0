@@ -11,10 +11,18 @@ import lenguages from "../../const/lenguage";
 
 const Main = () => {
   const [showNav, setShowNav] = useState(false);
-  const [lenguage, setLenguage] = useState("es");
+  const [lenguage, setLenguage] = useState(
+    localStorage.getItem("lenguage") || "es"
+  );
 
   const activateNav = () => {
     setShowNav(!showNav);
+  };
+
+  const changeLenguage = () => {
+    let newLenguage = lenguage === "es" ? "en" : "es";
+    setLenguage(newLenguage);
+    localStorage.setItem("lenguage", newLenguage);
   };
 
   return (
@@ -50,7 +58,7 @@ const Main = () => {
       />
       <div id="container_components">
         <Landing
-          setLenguage={setLenguage}
+          changeLenguage={changeLenguage}
           lenguage={lenguage}
           leng_landing={lenguages[`${lenguage}`].landing}
           leng_social={lenguages[`${lenguage}`].links}
