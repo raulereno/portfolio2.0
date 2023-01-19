@@ -1,5 +1,5 @@
 #container_contact {
-  margin-top: 7rem;
+  margin-top: 50px;
   padding: 0 100px;
   margin-bottom: 5rem;
   display: flex;
@@ -272,6 +272,22 @@
             align-self: center;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1270px) {
+  #container_contact {
+    padding: 35px 30px;
+
+    .contact {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      .container_form {
+        margin: 0;
+        margin-top: 30px;
       }
     }
   }

@@ -1,6 +1,6 @@
 #container_about {
   padding: 0 100px;
-  margin-top: 6rem;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   h2 {
@@ -76,7 +76,7 @@
         height: 300px;
       }
       div {
-        width: 100%;
+        width: 90%;
         p {
           width: 100%;
           text-align: center;
@@ -84,6 +84,23 @@
         }
         ul {
           display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  #container_about {
+    padding: 35px 30px;
+
+    .info_about {
+      flex-direction: column;
+      margin-top: 15px;
+      div {
+        width: 100%;
+
+        p {
+          width: 100%;
         }
       }
     }

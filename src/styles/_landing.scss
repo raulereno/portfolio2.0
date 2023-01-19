@@ -185,7 +185,7 @@
       img {
         width: 100%;
         opacity: 0.4;
-        height: 90vh;
+        height: 100vh;
       }
     }
     #container_features {
@@ -209,6 +209,45 @@
           }
           svg {
             fill: black;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1270px) {
+  #container_landing {
+    min-height: 100vh;
+    justify-content: center;
+    #textLanding {
+      align-items: center;
+    }
+    #imgLanding {
+      img {
+        display: none;
+      }
+    }
+    #container_features {
+      left: 5px;
+      top: 10px;
+      z-index: 40;
+      button {
+        svg {
+          width: 22px;
+          height: 22px;
+          fill: white;
+        }
+        span {
+          color: white;
+        }
+        &:hover {
+          transform: scale(1.06);
+          span {
+            color: white;
+            font-weight: bold;
+          }
+          svg {
+            fill: white;
           }
         }
       }
