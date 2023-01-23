@@ -61,6 +61,14 @@ export let tecnologies = [
     name: "Firebase",
     img: "https://mlsb5edd0ks1.i.optimole.com/w7nRKTw-QybKXTRc/w:auto/h:auto/q:mauto/f:avif/https://keytotech.com/wp-content/uploads/2019/05/firebase.png",
   },
+  {
+    name: "Python",
+    img: "https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png",
+  },
+  {
+    name: "Django",
+    img: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/django-icon.png",
+  },
 ];
 
 export let projects = {
@@ -173,6 +181,35 @@ export let projects = {
       ],
     },
     {
+      id: 5,
+      name: "Ecommerce - Python/Django ",
+      link: "https://raulereno.pythonanywhere.com/",
+      linkGithub:
+        "https://github.com/raulereno/cs50w_projects/tree/master/commerce",
+      image: "./assets/capturasProyectos/ecommercePy.png",
+      description:
+        "Segundo proyecto realizado para el curso CS50w dado por la Universidad de Harvard. En esta app puedes hacer registrarte/login, crear una subasta, hacer bids, agregar comentarios y hasta tener subastas en la lista de favoritos! Una vez cerrada la subasta se mostrara el ganador y la subasta dejara de estar en la lista de activas.Puedes filtrar por categorias todas las subastas.",
+      tecnologies: "Python,Django",
+      tecnologiesImg: tecnologies,
+      captures: [
+        {
+          img: "./assets/capturasProyectos/capsEcommercePy/details.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsEcommercePy/closedListing.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsEcommercePy/createListing.png",
+          title: "",
+          description: "",
+        },
+      ],
+    },
+    {
       id: 3,
       name: "Not Fungible Token Ecommerce",
       link: "https://nft-ecommerce-react.netlify.app/",
@@ -205,9 +242,8 @@ export let projects = {
         },
       ],
     },
-
     {
-      id: 5,
+      id: 6,
       name: "En progreso",
       link: "",
       image: defaultImg,
@@ -318,6 +354,35 @@ export let projects = {
         },
         {
           img: "./assets/capturasProyectos/capsFrontendMentor/tipCalculator.png",
+          title: "",
+          description: "",
+        },
+      ],
+    },
+    {
+      id: 5,
+      name: "Ecommerce - Python/Django ",
+      link: "https://raulereno.pythonanywhere.com/",
+      linkGithub:
+        "https://github.com/raulereno/cs50w_projects/tree/master/commerce",
+      image: "./assets/capturasProyectos/ecommercePy.png",
+      description:
+        "Second project done for the CS50w course given by Harvard University. In this app you can register/login, create an auction, make bids, add comments and even have auctions in the favorites list! Once the auction is closed, the winner will be shown and the auction will no longer be on the active list.You can filter by categories all the auctions.",
+      tecnologies: "Python,Django",
+      tecnologiesImg: tecnologies,
+      captures: [
+        {
+          img: "./assets/capturasProyectos/capsEcommercePy/details.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsEcommercePy/closedListing.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/capsEcommercePy/createListing.png",
           title: "",
           description: "",
         },
