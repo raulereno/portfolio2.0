@@ -1,12 +1,12 @@
 .container_detail {
   background-color: #1e3163;
   display: flex;
-  height: 85vh;
+  height: auto;
   border-radius: 5px;
   .closeModal {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 3px;
+    right: 3px;
     margin: 6px 6px 0 0;
     button {
       background-color: $font-ligth;
@@ -127,11 +127,11 @@
 @media screen and (max-width: 600px) {
   .container_detail {
     overflow: scroll;
-    height: 460px;
+    height: auto;
     .closeModal {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 1px;
+      right: 1px;
       margin: 3px 3px 0 0;
       z-index: 5;
       button {
@@ -140,6 +140,7 @@
       }
     }
     .detail_Proyect {
+      padding: 1px;
       .project {
         display: flex;
         flex-direction: column;
