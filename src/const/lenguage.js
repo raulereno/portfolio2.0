@@ -9,7 +9,7 @@ const lenguages = {
     },
     landing: {
       title: "Soy",
-      downloadCv: "Descargar CV",
+      downloadCv: "Descargar resumen",
     },
     portfolio: {
       title: "Portfolio",
@@ -97,7 +97,7 @@ const lenguages = {
     },
     links: {
       linkedin: "https://www.linkedin.com/in/raulereno/",
-      cv: "https://drive.google.com/file/d/17E-mw3L4-S1pnN7gmb0m8-BC8jTekSDX/view?usp=sharing",
+      cv: "./assets/cvs/FullStackDev_RaulEreño_ES.pdf",
     },
   },
   en: {
@@ -110,7 +110,7 @@ const lenguages = {
     },
     landing: {
       title: "Im",
-      downloadCv: "Download CV",
+      downloadCv: "Download resume",
     },
     portfolio: {
       title: "Projects",
@@ -198,7 +198,7 @@ const lenguages = {
     },
     links: {
       linkedin: "https://www.linkedin.com/in/raulereno/?locale=en_US",
-      cv: "https://drive.google.com/file/d/1VttVAHb1QBBOnZKQDFfnxnE2kpO55JY9/view?usp=sharing",
+      cv: "./assets/cvs/FullStackDev_RaulEreño_EN.pdf",
     },
   },
 };
