@@ -31,7 +31,12 @@ const SocialMedias = ({ links, text }) => {
         </svg>
       </a>
 
-      <a href={links.cv} target="_blank" rel="noreferrer" id="downloadCV">
+      <a
+        href={links.cv}
+        download={"CV Raúl Ereño"}
+        rel="noreferrer"
+        id="downloadCV"
+      >
         <svg
           version="1.1"
           id="Capa_1"

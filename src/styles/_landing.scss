@@ -49,6 +49,7 @@
     }
     .socialMedias {
       display: grid;
+      justify-items: center;
       grid-template-columns: repeat(3, 0.1fr);
       gap: 25px;
       z-index: 99;
@@ -69,7 +70,7 @@
       a#downloadCV {
         background-color: $secondary-color;
         display: flex;
-        width: 175px;
+        width: 180px;
         text-decoration: none;
         color: white;
         padding: 8px;
@@ -88,7 +89,7 @@
         &:hover {
           background-color: $font-ligth;
           transform: scale(1.02);
-          font-size: 13.5px;
+          font-size: 13.3px;
           font-weight: bolder;
         }
       }
