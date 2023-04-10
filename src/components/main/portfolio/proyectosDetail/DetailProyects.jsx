@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 const DetailProyects = ({ proyect, lenguage }) => {
   return (
-    <div className="detail_Proyect">
+    <div className="detail_Proyect" key={proyect.id}>
       {proyect.name.includes("En progreso") ? (
         <img src={proyect.image} alt="topSecret" className="imgTopSecret" />
       ) : (
@@ -19,12 +19,16 @@ const DetailProyects = ({ proyect, lenguage }) => {
                       <img className="imgAuth0" src={e.img} alt="" srcSet="" />
                     </div>
                   );
-                } else if (e.name === "Express") {
+                } else if (
+                  e.name === "Express" ||
+                  e.name === "Dart" ||
+                  e.name === "Flutter"
+                ) {
                   return (
                     <div key={i} className="container_img-tecs">
                       <span>{e.name}</span>
                       <img
-                        className="imgExpress"
+                        className="resizeImgTechs"
                         src={e.img}
                         alt=""
                         srcSet=""
@@ -32,6 +36,7 @@ const DetailProyects = ({ proyect, lenguage }) => {
                     </div>
                   );
                 }
+
                 return (
                   <div key={i} className="container_img-tecs">
                     <span>{e.name}</span>
@@ -44,6 +49,18 @@ const DetailProyects = ({ proyect, lenguage }) => {
             <div className="gallery_detail">
               <Carousel fade>
                 {proyect.captures.map((e) => {
+                  if (proyect.type && proyect.type === "appmobile") {
+                    return (
+                      <Carousel.Item>
+                        <img
+                          className="d-block mobile_captures"
+                          src={e.img}
+                          alt={e.title}
+                        />
+                      </Carousel.Item>
+                    );
+                  }
+
                   return (
                     <Carousel.Item>
                       <img
