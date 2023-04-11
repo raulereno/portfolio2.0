@@ -51,6 +51,61 @@ export let projects = {
       ],
     },
     {
+      id: 6,
+      name: "SpeakEasy",
+      type:"appmobile",
+      link: "https://drive.google.com/file/d/15Ylc4zan_U9Eowa9kYtmCyU-WMm9tGbF/view",
+      linkGithub: "https://github.com/No-Country/c9-49-m-flutter",
+      image: "./assets/capturasProyectos/speakeasy/logo-speakeasy.png",
+      description: "¿Quieres practicar un idioma? ¿Interactuar con personas de todo el mundo y aprender sobre su cultura? SpeakEasy es una aplicación móvil donde los usuarios pueden conectarse con hablantes nativos de otros países con el propósito de aprender y practicar un nuevo idioma.",
+      tecnologies: "Dart,Flutter y Firebase",
+      tecnologiesImg: tecnologies,
+      captures: [
+        {
+          img: "./assets/capturasProyectos/speakeasy/landing.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/onboarding1.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/onboarding2.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/onboarding3.png",
+          title: "",
+          description: "",
+        },
+        {
+          img:"./assets/capturasProyectos/speakeasy/connect.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/chat.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/one_chat.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/profile.png",
+          title: "",
+          description: "",
+        },
+        
+      ],
+
+    },
+    {
       id: 2,
       name: "Proyecto individual Bootcamp",
       link: "https://pi-dogs-henry.netlify.app/",
@@ -174,61 +229,7 @@ export let projects = {
         },
       ],
     },
-    {
-      id: 6,
-      name: "SpeakEasy",
-      type:"appmobile",
-      link: "https://drive.google.com/file/d/15Ylc4zan_U9Eowa9kYtmCyU-WMm9tGbF/view",
-      linkGithub: "https://github.com/No-Country/c9-49-m-flutter",
-      image: "./assets/capturasProyectos/speakeasy/logo-speakeasy.png",
-      description: "¿Quieres practicar un idioma? ¿Interactuar con personas de todo el mundo y aprender sobre su cultura? SpeakEasy es una aplicación móvil donde los usuarios pueden conectarse con hablantes nativos de otros países con el propósito de aprender y practicar un nuevo idioma.",
-      tecnologies: "Dart,Flutter y Firebase",
-      tecnologiesImg: tecnologies,
-      captures: [
-        {
-          img: "./assets/capturasProyectos/speakeasy/landing.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/onboarding1.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/onboarding2.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/onboarding3.png",
-          title: "",
-          description: "",
-        },
-        {
-          img:"./assets/capturasProyectos/speakeasy/connect.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/chat.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/one_chat.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/profile.png",
-          title: "",
-          description: "",
-        },
-        
-      ],
-
-    },
+    
     {
       id: 7,
       name: "En progreso",
@@ -283,6 +284,60 @@ export let projects = {
           description: "Booking of a place",
         },
       ],
+    },
+    {
+      id: 6,
+      name: "SpeakEasy",
+      type:"appmobile",
+      link: "https://drive.google.com/file/d/15Ylc4zan_U9Eowa9kYtmCyU-WMm9tGbF/view",
+      image: "./assets/capturasProyectos/speakeasy/logo-speakeasy.png",
+      description: "Do you want to practice a language? Interact with people from all over the world and learn about their culture? SpeakEasy is a mobile app where users can connect with native speakers from other countries for the purpose of learning and practicing a new language.",
+      tecnologies: "Dart, Flutter y Firebase",
+      tecnologiesImg: tecnologies,
+      captures: [
+        {
+          img: "./assets/capturasProyectos/speakeasy/landing.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/onboarding1.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/onboarding2.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/onboarding3.png",
+          title: "",
+          description: "",
+        },
+        {
+          img:"./assets/capturasProyectos/speakeasy/connect.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/chat.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/one_chat.png",
+          title: "",
+          description: "",
+        },
+        {
+          img: "./assets/capturasProyectos/speakeasy/profile.png",
+          title: "",
+          description: "",
+        },
+        
+      ],
+
     },
     {
       id: 2,
@@ -409,60 +464,7 @@ export let projects = {
       ],
     },
 
-    {
-      id: 6,
-      name: "SpeakEasy",
-      type:"appmobile",
-      link: "https://drive.google.com/file/d/15Ylc4zan_U9Eowa9kYtmCyU-WMm9tGbF/view",
-      image: "./assets/capturasProyectos/speakeasy/logo-speakeasy.png",
-      description: "Do you want to practice a language? Interact with people from all over the world and learn about their culture? SpeakEasy is a mobile app where users can connect with native speakers from other countries for the purpose of learning and practicing a new language.",
-      tecnologies: "Dart, Flutter y Firebase",
-      tecnologiesImg: tecnologies,
-      captures: [
-        {
-          img: "./assets/capturasProyectos/speakeasy/landing.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/onboarding1.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/onboarding2.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/onboarding3.png",
-          title: "",
-          description: "",
-        },
-        {
-          img:"./assets/capturasProyectos/speakeasy/connect.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/chat.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/one_chat.png",
-          title: "",
-          description: "",
-        },
-        {
-          img: "./assets/capturasProyectos/speakeasy/profile.png",
-          title: "",
-          description: "",
-        },
-        
-      ],
-
-    },
+    
     {
       id: 7,
       name: "En progreso",

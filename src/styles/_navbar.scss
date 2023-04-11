@@ -63,7 +63,7 @@
     }
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .container_navbar {
     width: 0;
     transition: 0.3s;
@@ -134,20 +134,13 @@
 @media screen and (min-width: 600px) and (max-width: 1000px) {
   .container_navbar {
     position: fixed;
-    z-index: 99;
+    z-index: 98;
     .navbar {
       ul {
         .scrollto.resumenNav {
           display: none;
         }
-        .scrollto {
-          a {
-            span {
-            }
-            svg {
-            }
-          }
-        }
+
         .active {
           background-color: transparent;
         }
