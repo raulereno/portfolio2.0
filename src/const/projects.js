@@ -12,7 +12,7 @@ export let projects = {
       linkGithub: "https://github.com/raulereno/rent-ten",
       image: "./assets/capturasProyectos/logo_rentten-white.png",
       description:
-        "Proyecto grupal final del bootcamp soyHenry en donde junto a otros 5 compañeros realizamos un proyecto dedicado a aquellas personas que buscan alquilar y/o publicar alojamientos temporarios.",
+        "Mi rol en este proyecto fue como Desarrollador Full Stack. Fui responsable, junto con un colega, de construir la REST API. Más tarde, trabajé con los desarrolladores de frontend para maquetar la aplicación web. Seguimos la metodología Agile Scrum, que incluía fechas límite de entrega, reuniones diarias, historias de usuarios, sprints y otras buenas prácticas de este marco de trabajo.",
       tecnologies:
         "Angular,Typescript,NGRX,Node.js,Express,PostgreSQL        Sequelize,MercadoPago, Nodemailer,Auth0",
       tecnologiesImg: tecnologies,
@@ -57,7 +57,7 @@ export let projects = {
       link: "https://drive.google.com/file/d/15Ylc4zan_U9Eowa9kYtmCyU-WMm9tGbF/view",
       linkGithub: "https://github.com/No-Country/c9-49-m-flutter",
       image: "./assets/capturasProyectos/speakeasy/logo-speakeasy.png",
-      description: "¿Quieres practicar un idioma? ¿Interactuar con personas de todo el mundo y aprender sobre su cultura? SpeakEasy es una aplicación móvil donde los usuarios pueden conectarse con hablantes nativos de otros países con el propósito de aprender y practicar un nuevo idioma.",
+      description: "Aunque mi perfil está enfocado en el desarrollo web, no tengo miedo de aceptar desafíos, como las prácticas de NoCountry que te conectan con un equipo interdisciplinario para mejorar las habilidades blandas y el trabajo en equipo a través de la metodología Scrum. En esta ocasión, fui responsable de crear algunas vistas con Dart y Flutter, siendo este último un marco de desarrollo móvil. Además, ayudé a mis compañeros de equipo a conectar todas las vistas con la base de datos Firebase utilizada.",
       tecnologies: "Dart,Flutter y Firebase",
       tecnologiesImg: tecnologies,
       captures: [
@@ -113,7 +113,7 @@ export let projects = {
 
       linkGithub: "https://github.com/raulereno/app-henry-deploy",
       description:
-        "Proyecto individual realizado en el bootcamp SoyHenry donde aprendi a hacer un sitio web desde el frontend del mismo hasta el backend, donde hicimos nuesta propia base de datos con SQL",
+        "Creación de un sitio web que consume una API con información sobre razas de perros. Implementé individualmente HTML, React con Javascript, utilizando Sass para estilos, y en el backend implementé Node.js, Express, Sequelize y PostgreSQL como base de datos.",
       tecnologies: "Javascript,React,Redux,NodeJs,Express,Sequelize,PostgreSQL",
       tecnologiesImg: tecnologies,
       captures: [
@@ -247,7 +247,7 @@ export let projects = {
       linkGithub: "https://github.com/raulereno/rent-ten",
       image: "./assets/capturasProyectos/logo_rentten-white.png",
       description:
-        "Final group project of the soyHenry bootcamp where together with 5 other classmates we developed a project dedicated to those looking to rent and/or publish temporary accommodations.",
+        "My role in this project was as a Full Stack Developer. I was responsible, along with a colleague, for building the REST API. Later on, I worked with the frontend developers to complete the web app's layout. We followed the Agile Scrum methodology, which included delivery deadlines, daily meetings, user stories, sprints, and other good practices of this framework.",
       tecnologies:
         "Angular,Typescript,NGRX,Node.js,Express,PostgreSQL        Sequelize,MercadoPago, Nodemailer,Auth0",
       tecnologiesImg: tecnologies,
@@ -291,7 +291,7 @@ export let projects = {
       type:"appmobile",
       link: "https://drive.google.com/file/d/15Ylc4zan_U9Eowa9kYtmCyU-WMm9tGbF/view",
       image: "./assets/capturasProyectos/speakeasy/logo-speakeasy.png",
-      description: "Do you want to practice a language? Interact with people from all over the world and learn about their culture? SpeakEasy is a mobile app where users can connect with native speakers from other countries for the purpose of learning and practicing a new language.",
+      description: "Although my profile is focused on web development, I am not afraid to take on challenges, such as the NoCountry practices that connect you with an interdisciplinary team to improve soft skills and teamwork through the Scrum methodology. On this occasion, I was responsible for creating some views with Dart and Flutter, the latter being a mobile development framework. Additionally, I helped my teammates connect all the views with the Firebase database used.",
       tecnologies: "Dart, Flutter y Firebase",
       tecnologiesImg: tecnologies,
       captures: [
@@ -347,7 +347,7 @@ export let projects = {
 
       linkGithub: "https://github.com/raulereno/app-henry-deploy",
       description:
-        "Individual project completed in the SoyHenry bootcamp where I learned to create a website from the frontend to the backend, where we made our own database with SQL.",
+        "Creation of a website consuming an API with information about dog breeds. Individually implemented HTML, React with Javascript, using Sass for styling, and on the backend implemented Node.js, Express, Sequelize and PostgreSQL as the database.",
       tecnologies: "Javascript,React,Redux,NodeJs,Express,Sequelize,PostgreSQL",
       tecnologiesImg: tecnologies,
       captures: [
